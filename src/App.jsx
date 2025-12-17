@@ -4,7 +4,7 @@ import "./App.css";
 import "./index.css";
 import React from "react";
 import translations from "./js/translation.js";
-import { RiLinkedinFill , RiTwitterXLine , RiGithubLine , RiP2pLine , RiMailLine,RiMapPin2Line } from "@remixicon/react"
+import { RiLinkedinFill , RiTwitterXLine , RiGithubLine , RiP2pLine , RiMailLine,RiMapPin2Line,RiDiscordLine } from "@remixicon/react"
 
 
 
@@ -90,22 +90,13 @@ function App() {
               . I build ideas, code, and real-world solutions
             </h3>
           </div>
-          <div className=" w-35 h-15  text-white relative inline-block overflow-hidden rounded-full p-[2px] mt-10">
+          <div className=" w-45 h-15  text-white relative inline-block overflow-hidden rounded-full p-[2px] mt-10 ">
             {/* <span className='relative inline-block overflow-hidden rounded-full p-[2px]'> */}
             <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#FFFFFF_0%,#2563EB_50%,#FFFFFF_100%)]" />
-            <div className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-gray-950 px-3 py-1 text-2xl font-semibold text-gray-50 backdrop-blur-3xl ">
-              <a href="https://www.linkedin.com/in/nikhil0148" className="flex gap-1 items-center">
+            <div className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-gray-950 px-3 py-1 text-2xl font-semibold text-gray-50 backdrop-blur-3xl hover:bg-gray-700 ">
+              <a href="https://www.linkedin.com/in/nikhil0148" target="_blank" className="flex gap-1 text-[20px] items-center hover:bg-gray-700">
                 {" "}
-                {/* <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  width="24"
-                  height="24"
-                  fill="rgba(255,255,255,1)"
-                >
-                  <path d="M21 16.42V19.9561C21 20.4811 20.5941 20.9167 20.0705 20.9537C19.6331 20.9846 19.2763 21 19 21C10.1634 21 3 13.8366 3 5C3 4.72371 3.01545 4.36687 3.04635 3.9295C3.08337 3.40588 3.51894 3 4.04386 3H7.5801C7.83678 3 8.05176 3.19442 8.07753 3.4498C8.10067 3.67907 8.12218 3.86314 8.14207 4.00202C8.34435 5.41472 8.75753 6.75936 9.3487 8.00303C9.44359 8.20265 9.38171 8.44159 9.20185 8.57006L7.04355 10.1118C8.35752 13.1811 10.8189 15.6425 13.8882 16.9565L15.4271 14.8019C15.5572 14.6199 15.799 14.5573 16.001 14.6532C17.2446 15.2439 18.5891 15.6566 20.0016 15.8584C20.1396 15.8782 20.3225 15.8995 20.5502 15.9225C20.8056 15.9483 21 16.1633 21 16.42Z"></path>
-                </svg> */}
-                Contact
+                Let's Connect
               </a>
             </div>
           </div>
@@ -279,7 +270,8 @@ function App() {
         <div className="flex justify-center items-center ">
           <h2 className="font-bold text-3xl text-white text-center mb-5">
             {t.contact}
-            <p className="text-xl text-gray-400">
+            <span class=" max-w-14 h-0.5 bg-white z-20 absolute left-0 right-0 mx-auto mt-1/2 block"></span>
+            <p className="text-[18px] text-gray-400 mt-2 ">
               {t.contacttext}
             </p>
           </h2>
@@ -288,31 +280,37 @@ function App() {
           {/* <span className="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium bg-blue-100 text-blue-800 dark:bg-blue-800/30 dark:text-blue-500"></span>*/}
           <a
             className="inline-flex items-center  gap-x-1.5 py-2.5 px-5 rounded-full text-xs font-medium bg-blue-100 text-blue-800 dark:bg-blue-800/30 dark:text-blue-500 hover:text-blue-500 hover:bg-blue-800/80"
-            href="https://www.linkedin.com/in/nikhil0148"
+            href="https://www.linkedin.com/in/nikhil0148" target="_blank"
           ><RiLinkedinFill size="14px" />
             LinkedIn
           </a>
           <a
             className="inline-flex items-center gap-x-1.5 py-2.5 px-5 rounded-full text-xs font-medium bg-blue-100 text-blue-800 dark:bg-blue-800/30 dark:text-blue-500 hover:text-blue-500 hover:bg-blue-800/80"
-            href="https://twitter.com/nikhil0148"
+            href="https://twitter.com/nikhil0148"   target="_blank"
           ><RiTwitterXLine size="14px" />
             Twitter(X)
           </a>
           <a
             className="inline-flex items-center gap-x-1.5 py-2.5 px-5 rounded-full text-xs font-medium bg-blue-100 text-blue-800 dark:bg-blue-800/30 dark:text-blue-500 hover:text-blue-500 hover:bg-blue-800/80"
-            href="https://github.com/nikhilydv0148"
+            href="https://github.com/nikhilydv0148" target="_blank"
           ><RiGithubLine size="14px" />
             GitHub
           </a>
           <a
             className="inline-flex items-center gap-x-1.5 py-2.5 px-5 rounded-full text-xs font-medium bg-blue-100 text-blue-800 dark:bg-blue-800/30 dark:text-blue-500 hover:text-blue-500 hover:bg-blue-800/80"
-            href="https://peerlist.io/nikhil0148"
+            href="https://peerlist.io/nikhil0148" target="_blank"
           ><RiP2pLine size="14px" />
             Peerlist
           </a>
           <a
             className="inline-flex items-center gap-x-1.5 py-2.5 px-5 rounded-full text-xs font-medium bg-blue-100 text-blue-800 dark:bg-blue-800/30 dark:text-blue-500 hover:text-blue-500 hover:bg-blue-800/80"
-            href="mailto:contact.nikhim@gmail.com"
+            href="https://discord.gg/WKejKbMJ" target="_blank"
+          ><RiDiscordLine size="14px" />
+            Discord
+          </a>
+          <a
+            className="inline-flex items-center gap-x-1.5 py-2.5 px-5 rounded-full text-xs font-medium bg-blue-100 text-blue-800 dark:bg-blue-800/30 dark:text-blue-500 hover:text-blue-500 hover:bg-blue-800/80"
+            href="mailto:contact.nikhim@gmail.com" target="_blank"
           ><RiMailLine size="14px" />
             Email
           </a>
