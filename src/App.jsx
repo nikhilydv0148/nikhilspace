@@ -4,7 +4,7 @@ import "./App.css";
 import "./index.css";
 import React from "react";
 import translations from "./js/translation.js";
-import { RiLinkedinFill , RiTwitterXLine , RiGithubLine , RiP2pLine , RiMailLine,RiMapPin2Line,RiDiscordLine } from "@remixicon/react"
+import { RiLinkedinFill , RiTwitterXLine , RiGithubLine , RiP2pLine , RiMailLine,RiMapPin2Line,RiDiscordLine,RiEarthLine, RiChatSmile2Line } from "@remixicon/react"
 
 
 
@@ -38,7 +38,7 @@ function App() {
 
   return (
     <>
-    {
+    {/* {
       showAlert && (
         <div className="fixed top-4 left-1/2 transform  -translate-x-1/2 bg-gray-500 text-white px-3 py-2 rounded shadow-lg z-50 flex items-center justify-between w-90 sm:w-190 max-w-md">
           Hi! You can Switch Language between English and Rajasthani using the EN & RJ button at the top.
@@ -50,7 +50,7 @@ function App() {
           </button>
         </div>
       )
-    }
+    } */}
     <div className=" top-0 z-[-2] h-full w-full bg-[#000000e9] myfont ">
         <div className="flex justify-center w-full pt-5 text-white">
         <label className="themeSwitcherTwo shadow-card relative inline-flex cursor-pointer select-none items-center justify-center rounded-md bg-black p-1">
@@ -276,7 +276,17 @@ function App() {
             </p>
           </h2>
         </div>
+
+        <div className="w-full flex justify-center items-center flex-col text-white mt-2 gap-2 h-10  mb-10">
+          <div className="inline-flex px-8 h-10 gap-1 items-center justify-center bg-white text-black py-1.5  rounded-full text-[18px] font-medium hover:text-black-500 hover:bg-gray-100/80 cursor-pointer" onClick={() => window.open('https://duochatapp.netlify.app/', '_blank' )}>
+<RiChatSmile2Line size={20}/>
+<p>ChatWithMe</p>
+</div>
+<p className="text-gray-400 text-[14px]">Time : 12:00 PM - 8:00 PM</p>
+
+        </div>
         <div className="flex justify-center items-center gap-5 flex-wrap  ">
+
           {/* <span className="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium bg-blue-100 text-blue-800 dark:bg-blue-800/30 dark:text-blue-500"></span>*/}
           <a
             className="inline-flex items-center  gap-x-1.5 py-2.5 px-5 rounded-full text-xs font-medium bg-blue-100 text-blue-800 dark:bg-blue-800/30 dark:text-blue-500 hover:text-blue-500 hover:bg-blue-800/80"
@@ -320,6 +330,7 @@ function App() {
 <p>Chomu, Jaipur, Rajsthan.</p>
 
         </div>
+        
         <div className="relative w-full h-26 sm:h-64 overflow-hidden">
           <p
             className="
