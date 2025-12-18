@@ -38,7 +38,7 @@ function App() {
 
   return (
     <>
-    {/* {
+    {
       showAlert && (
         <div className="fixed top-4 left-1/2 transform  -translate-x-1/2 bg-gray-500 text-white px-3 py-2 rounded shadow-lg z-50 flex items-center justify-between w-90 sm:w-190 max-w-md">
           Hi! You can Switch Language between English and Rajasthani using the EN & RJ button at the top.
@@ -50,7 +50,7 @@ function App() {
           </button>
         </div>
       )
-    } */}
+    }
     <div className=" top-0 z-[-2] h-full w-full bg-[#000000e9] myfont ">
         <div className="flex justify-center w-full pt-5 text-white">
         <label className="themeSwitcherTwo shadow-card relative inline-flex cursor-pointer select-none items-center justify-center rounded-md bg-black p-1">
